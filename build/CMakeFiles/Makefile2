@@ -44,21 +44,21 @@ RM = /usr/local/Cellar/cmake/3.15.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/quan/Developer/C/images_open
+CMAKE_SOURCE_DIR = /Users/quan/Developer/C/image_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/quan/Developer/C/images_open/build
+CMAKE_BINARY_DIR = /Users/quan/Developer/C/image_test/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/images_test.dir/all
+all: CMakeFiles/DNNImage.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/images_test.dir/clean
+clean: CMakeFiles/DNNImage.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +68,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/images_test.dir
+# Target rules for target CMakeFiles/DNNImage.dir
 
 # All Build rule for target.
-CMakeFiles/images_test.dir/all:
-	$(MAKE) -f CMakeFiles/images_test.dir/build.make CMakeFiles/images_test.dir/depend
-	$(MAKE) -f CMakeFiles/images_test.dir/build.make CMakeFiles/images_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/quan/Developer/C/images_open/build/CMakeFiles --progress-num=1,2 "Built target images_test"
-.PHONY : CMakeFiles/images_test.dir/all
+CMakeFiles/DNNImage.dir/all:
+	$(MAKE) -f CMakeFiles/DNNImage.dir/build.make CMakeFiles/DNNImage.dir/depend
+	$(MAKE) -f CMakeFiles/DNNImage.dir/build.make CMakeFiles/DNNImage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/quan/Developer/C/image_test/build/CMakeFiles --progress-num=1,2 "Built target DNNImage"
+.PHONY : CMakeFiles/DNNImage.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/images_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/quan/Developer/C/images_open/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/images_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/quan/Developer/C/images_open/build/CMakeFiles 0
-.PHONY : CMakeFiles/images_test.dir/rule
+CMakeFiles/DNNImage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/quan/Developer/C/image_test/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DNNImage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/quan/Developer/C/image_test/build/CMakeFiles 0
+.PHONY : CMakeFiles/DNNImage.dir/rule
 
 # Convenience name for target.
-images_test: CMakeFiles/images_test.dir/rule
+DNNImage: CMakeFiles/DNNImage.dir/rule
 
-.PHONY : images_test
+.PHONY : DNNImage
 
 # clean rule for target.
-CMakeFiles/images_test.dir/clean:
-	$(MAKE) -f CMakeFiles/images_test.dir/build.make CMakeFiles/images_test.dir/clean
-.PHONY : CMakeFiles/images_test.dir/clean
+CMakeFiles/DNNImage.dir/clean:
+	$(MAKE) -f CMakeFiles/DNNImage.dir/build.make CMakeFiles/DNNImage.dir/clean
+.PHONY : CMakeFiles/DNNImage.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

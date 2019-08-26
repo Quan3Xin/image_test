@@ -20,17 +20,15 @@ int a(double c, double d, double e)
 }
 int main(int argc, char **argv)
 {
-    int a =123;
-    int b =1;
-    int f =10;
-    double c =1;
-    double d =1;
+  
+    String img_url = "/Users/quan/Downloads/1536875932666.jpg" ;
 
-    double e =1;
+    Mat imgs = imread(img_url);
+    cout << "images row -->" << imgs.rows << endl;
+    cout << "images row -->" << imgs.cols << endl;
 
-    cout << a(b,a) <<endl;
-    cout << a(c,d,e) <<endl;
-    
+    //Rect rect(50, 50, 50, 50);
+    //Mat image_cut = Mat(img ,rect);
 
     
 

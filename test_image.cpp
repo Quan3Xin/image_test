@@ -8,6 +8,7 @@
 #include <stdio.h>
 
 using namespace cv;
+using namespace dnn;
 using namespace std;
 
 #define SSTR( x ) static_cast< std::ostringstream & >( \
@@ -22,6 +23,22 @@ double fibi(int a)
 }
 int main() 
 { 
+    String pbPath = "/Users/quan/Developer/C/image_test/source/frozen_inference_graph.pb";
+    String pbTxtPath = "/Users/quan/Developer/C/image_test/source/frozen_inference_graph.pbtxt";
+    Net network = readNetFromTensorflow(pbPath, pbTxtPath);
+    if(network.empty()) {
+        cout << "Can't not load Tensorflow model." << endl;
+        return -1;
+    }
+    
+    const int inWidth = 300;
+    const int inHeight = 300;
+    const float meanVal = 127.5;
+    const float inScaleFactor = 1.5f;
+    bool swapRB = true;
+    bool crop = false;
+    
+
     //VideoCapture vid("/Users/quan/Desktop/demo.mp4");
     VideoCapture vid(0);
     // int a = 10;
@@ -61,6 +78,8 @@ int main()
         String fpsString("FPS:");
         fpsString+=fps_str;
         Mat frame;
+
+
         vid >> frame;
         cv::putText(
                 frame,
@@ -79,7 +98,16 @@ int main()
             case 'j': applyColorMap(frame, frame, COLORMAP_HOT);
                       break;
         }
-        
+        Mat inputBlob = blobFromImage(frame,
+            inScaleFactor,
+            Size(inWidth, inHeight),
+            Scalar(meanVal,meanVal, meanVal),
+            swapRB,
+            crop);
+
+        network.setInput(inputBlob);
+        Mat result = network.forward();
+       
         // applyColorMap(frame, frame, COLORMAP_JET);
         imshow("Video", frame);
         int k =waitKey(10);

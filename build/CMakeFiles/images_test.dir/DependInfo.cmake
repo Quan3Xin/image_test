@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/quan/Developer/C/images_open/test_image.cpp" "/Users/quan/Developer/C/images_open/build/CMakeFiles/images_test.dir/test_image.cpp.o"
+  "/Users/quan/Developer/C/image_test/test_image.cpp" "/Users/quan/Developer/C/image_test/build/CMakeFiles/images_test.dir/test_image.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/Cellar/opencv/4.1.0_2/include/opencv4"
+  "/usr/local/include/opencv4"
   )
 
 # Targets to which this target links.

@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.15.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/quan/Developer/C/images_open
+CMAKE_SOURCE_DIR = /Users/quan/Developer/C/image_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/quan/Developer/C/images_open/build
+CMAKE_BINARY_DIR = /Users/quan/Developer/C/image_test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/quan/Developer/C/images_open/build/CMakeFiles /Users/quan/Developer/C/images_open/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/quan/Developer/C/image_test/build/CMakeFiles /Users/quan/Developer/C/image_test/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/quan/Developer/C/images_open/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/quan/Developer/C/image_test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named images_test
+# Target rules for targets named DNNImage
 
 # Build rule for target.
-images_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 images_test
-.PHONY : images_test
+DNNImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DNNImage
+.PHONY : DNNImage
 
 # fast build rule for target.
-images_test/fast:
-	$(MAKE) -f CMakeFiles/images_test.dir/build.make CMakeFiles/images_test.dir/build
-.PHONY : images_test/fast
+DNNImage/fast:
+	$(MAKE) -f CMakeFiles/DNNImage.dir/build.make CMakeFiles/DNNImage.dir/build
+.PHONY : DNNImage/fast
 
-test_image.o: test_image.cpp.o
+imageWithDNN.o: imageWithDNN.cpp.o
 
-.PHONY : test_image.o
+.PHONY : imageWithDNN.o
 
 # target to build an object file
-test_image.cpp.o:
-	$(MAKE) -f CMakeFiles/images_test.dir/build.make CMakeFiles/images_test.dir/test_image.cpp.o
-.PHONY : test_image.cpp.o
+imageWithDNN.cpp.o:
+	$(MAKE) -f CMakeFiles/DNNImage.dir/build.make CMakeFiles/DNNImage.dir/imageWithDNN.cpp.o
+.PHONY : imageWithDNN.cpp.o
 
-test_image.i: test_image.cpp.i
+imageWithDNN.i: imageWithDNN.cpp.i
 
-.PHONY : test_image.i
+.PHONY : imageWithDNN.i
 
 # target to preprocess a source file
-test_image.cpp.i:
-	$(MAKE) -f CMakeFiles/images_test.dir/build.make CMakeFiles/images_test.dir/test_image.cpp.i
-.PHONY : test_image.cpp.i
+imageWithDNN.cpp.i:
+	$(MAKE) -f CMakeFiles/DNNImage.dir/build.make CMakeFiles/DNNImage.dir/imageWithDNN.cpp.i
+.PHONY : imageWithDNN.cpp.i
 
-test_image.s: test_image.cpp.s
+imageWithDNN.s: imageWithDNN.cpp.s
 
-.PHONY : test_image.s
+.PHONY : imageWithDNN.s
 
 # target to generate assembly for a file
-test_image.cpp.s:
-	$(MAKE) -f CMakeFiles/images_test.dir/build.make CMakeFiles/images_test.dir/test_image.cpp.s
-.PHONY : test_image.cpp.s
+imageWithDNN.cpp.s:
+	$(MAKE) -f CMakeFiles/DNNImage.dir/build.make CMakeFiles/DNNImage.dir/imageWithDNN.cpp.s
+.PHONY : imageWithDNN.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... images_test"
-	@echo "... test_image.o"
-	@echo "... test_image.i"
-	@echo "... test_image.s"
+	@echo "... DNNImage"
+	@echo "... imageWithDNN.o"
+	@echo "... imageWithDNN.i"
+	@echo "... imageWithDNN.s"
 .PHONY : help
 
 

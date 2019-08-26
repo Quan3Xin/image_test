@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.15.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/quan/Developer/C/images_open
+CMAKE_SOURCE_DIR = /Users/quan/Developer/C/image_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/quan/Developer/C/images_open/build
+CMAKE_BINARY_DIR = /Users/quan/Developer/C/image_test/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/images_test.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/images_test.dir/flags.make
 
 CMakeFiles/images_test.dir/test_image.cpp.o: CMakeFiles/images_test.dir/flags.make
 CMakeFiles/images_test.dir/test_image.cpp.o: ../test_image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/quan/Developer/C/images_open/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/images_test.dir/test_image.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/images_test.dir/test_image.cpp.o -c /Users/quan/Developer/C/images_open/test_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/quan/Developer/C/image_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/images_test.dir/test_image.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/images_test.dir/test_image.cpp.o -c /Users/quan/Developer/C/image_test/test_image.cpp
 
 CMakeFiles/images_test.dir/test_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/images_test.dir/test_image.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/quan/Developer/C/images_open/test_image.cpp > CMakeFiles/images_test.dir/test_image.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/quan/Developer/C/image_test/test_image.cpp > CMakeFiles/images_test.dir/test_image.cpp.i
 
 CMakeFiles/images_test.dir/test_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/images_test.dir/test_image.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/quan/Developer/C/images_open/test_image.cpp -o CMakeFiles/images_test.dir/test_image.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/quan/Developer/C/image_test/test_image.cpp -o CMakeFiles/images_test.dir/test_image.cpp.s
 
 # Object files for target images_test
 images_test_OBJECTS = \
@@ -79,56 +79,56 @@ images_test_EXTERNAL_OBJECTS =
 
 images_test: CMakeFiles/images_test.dir/test_image.cpp.o
 images_test: CMakeFiles/images_test.dir/build.make
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_gapi.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_stitching.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_aruco.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_bgsegm.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_bioinspired.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_ccalib.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_dnn_objdetect.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_dpm.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_face.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_freetype.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_fuzzy.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_hfs.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_img_hash.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_line_descriptor.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_quality.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_reg.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_rgbd.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_saliency.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_sfm.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_stereo.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_structured_light.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_superres.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_surface_matching.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_tracking.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_videostab.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_xfeatures2d.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_xobjdetect.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_xphoto.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_shape.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_datasets.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_plot.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_text.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_dnn.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_ml.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_phase_unwrapping.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_optflow.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_ximgproc.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_video.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_objdetect.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_calib3d.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_features2d.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_flann.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_highgui.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_videoio.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_imgcodecs.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_photo.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_imgproc.4.1.0.dylib
-images_test: /usr/local/Cellar/opencv/4.1.0_2/lib/libopencv_core.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_gapi.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_stitching.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_aruco.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_bgsegm.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_bioinspired.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_ccalib.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_dnn_objdetect.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_dpm.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_face.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_freetype.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_fuzzy.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_hfs.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_img_hash.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_line_descriptor.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_quality.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_reg.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_rgbd.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_saliency.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_sfm.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_stereo.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_structured_light.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_superres.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_surface_matching.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_tracking.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_videostab.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_xfeatures2d.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_xobjdetect.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_xphoto.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_shape.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_datasets.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_plot.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_text.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_dnn.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_ml.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_phase_unwrapping.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_optflow.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_ximgproc.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_video.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_objdetect.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_calib3d.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_features2d.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_flann.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_highgui.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_videoio.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_imgcodecs.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_photo.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_imgproc.4.1.0.dylib
+images_test: /usr/local/lib/libopencv_core.4.1.0.dylib
 images_test: CMakeFiles/images_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/quan/Developer/C/images_open/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable images_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/quan/Developer/C/image_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable images_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/images_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -141,6 +141,6 @@ CMakeFiles/images_test.dir/clean:
 .PHONY : CMakeFiles/images_test.dir/clean
 
 CMakeFiles/images_test.dir/depend:
-	cd /Users/quan/Developer/C/images_open/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/quan/Developer/C/images_open /Users/quan/Developer/C/images_open /Users/quan/Developer/C/images_open/build /Users/quan/Developer/C/images_open/build /Users/quan/Developer/C/images_open/build/CMakeFiles/images_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/quan/Developer/C/image_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/quan/Developer/C/image_test /Users/quan/Developer/C/image_test /Users/quan/Developer/C/image_test/build /Users/quan/Developer/C/image_test/build /Users/quan/Developer/C/image_test/build/CMakeFiles/images_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/images_test.dir/depend
 

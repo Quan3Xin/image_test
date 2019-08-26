@@ -36,10 +36,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.15.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/usr/local/Cellar/cmake/3.15.1/share/cmake/Modules/Platform/Darwin.cmake"
   "/usr/local/Cellar/cmake/3.15.1/share/cmake/Modules/Platform/UnixPaths.cmake"
-  "/usr/local/Cellar/opencv/4.1.0_2/lib/cmake/opencv4/OpenCVConfig-version.cmake"
-  "/usr/local/Cellar/opencv/4.1.0_2/lib/cmake/opencv4/OpenCVConfig.cmake"
-  "/usr/local/Cellar/opencv/4.1.0_2/lib/cmake/opencv4/OpenCVModules-release.cmake"
-  "/usr/local/Cellar/opencv/4.1.0_2/lib/cmake/opencv4/OpenCVModules.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVConfig.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVModules.cmake"
   )
 
 # The corresponding makefile is:
@@ -55,5 +55,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/images_test.dir/DependInfo.cmake"
+  "CMakeFiles/DNNImage.dir/DependInfo.cmake"
   )
